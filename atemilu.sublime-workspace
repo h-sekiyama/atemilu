@@ -1,0 +1,719 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"style",
+				"stylesheets"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/lib/javascripts/entry.jsx",
+			"settings":
+			{
+				"buffer_size": 691,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/lib/javascripts/containers/App.jsx",
+			"settings":
+			{
+				"buffer_size": 1947,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/lib/javascripts/components/Main.jsx",
+			"settings":
+			{
+				"buffer_size": 733,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/lib/javascripts/components/Buttons.jsx",
+			"settings":
+			{
+				"buffer_size": 1407,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/lib/javascripts/components/Footer.jsx",
+			"settings":
+			{
+				"buffer_size": 905,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/lib/javascripts/components/Header.jsx",
+			"settings":
+			{
+				"buffer_size": 1075,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/lib/javascripts/actions/actions.jsx",
+			"settings":
+			{
+				"buffer_size": 984,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/lib/javascripts/reducers/reducer.jsx",
+			"settings":
+			{
+				"buffer_size": 1218,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 147.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pci",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/01012191/Sites/atemilu"
+	],
+	"file_history":
+	[
+		"/Users/01012191/git/corona/ocean/package.json",
+		"/Users/01012191/Sites/atemilu/app/lib/javascripts/containers/App.jsx",
+		"/Users/01012191/Sites/itemilu/app/lib/javascripts/components/EventBox.jsx",
+		"/Users/01012191/Sites/itemilu/app/lib/javascripts/components/Event.jsx",
+		"/Users/01012191/Sites/itemilu/app/lib/javascripts/components/Header.jsx",
+		"/Users/01012191/git/corona/ocean/frontend/reducers/user.js",
+		"/Users/01012191/git/corona/ocean/frontend/actions/index.js",
+		"/Users/01012191/git/corona/ocean/frontend/index.js",
+		"/Users/01012191/git/corona/ocean/frontend/containers/App.js",
+		"/Users/01012191/git/corona/ocean/frontend/containers/home/Home.js",
+		"/Users/01012191/git/corona/ocean/frontend/components/organisums/scout/SideBar.js",
+		"/Users/01012191/git/corona/ocean/frontend/components/organisums/scout/UserDetailModal.js",
+		"/Users/01012191/git/corona/ocean/frontend/components/organisums/scout/UserRecord.js",
+		"/Users/01012191/Sites/redux/examples/async/actions/index.js",
+		"/Users/01012191/Sites/redux/examples/async/reducers/index.js",
+		"/Users/01012191/git/corona/ocean/frontend/reducers/index.js",
+		"/Users/01012191/Sites/itemilu/app/lib/javascripts/components/Main.jsx",
+		"/Users/01012191/Sites/itemilu/config/routes.rb",
+		"/Users/01012191/Sites/itemilu/app/views/home/top.html.haml",
+		"/Users/01012191/Sites/itemilu/app/controllers/home_controller.rb",
+		"/Users/01012191/Sites/itemilu/app/controllers/events_controller.rb",
+		"/Users/01012191/Sites/itemilu/app/helpers/event_helper.rb",
+		"/Users/01012191/Sites/itemilu/app/views/event/index.html.haml",
+		"/Users/01012191/Sites/itemilu/app/lib/javascripts/actions/EventActions.jsx",
+		"/Users/01012191/Sites/itemilu/app/lib/javascripts/stores/Event.jsx",
+		"/Users/01012191/git/corona/ocean/frontend/store/configureStore.js",
+		"/Users/01012191/Sites/itemilu/app/views/event/event.html.haml",
+		"/Users/01012191/Sites/itemilu/app/views/events/events.html.haml",
+		"/Users/01012191/Sites/Orion/app/views/sigoverflow/questions/index.html.haml",
+		"/Users/01012191/Sites/itemilu/app/models/event.rb",
+		"/Users/01012191/Sites/Orion/app/controllers/sigoverflow/questions_controller.rb",
+		"/Users/01012191/Sites/Orion/app/models/sigoverflow/question.rb",
+		"/Users/01012191/Sites/react-rails-tutorial-master/app/assets/javascripts/components/comment_box.js.jsx",
+		"/Users/01012191/Sites/react-rails-tutorial-master/app/assets/javascripts/application.js",
+		"/Users/01012191/Sites/react-rails-tutorial-master/app/views/layouts/application.html.erb",
+		"/Users/01012191/Sites/react-rails-tutorial-master/app/views/comments/index.html.erb",
+		"/Users/01012191/Sites/react-rails-tutorial-master/app/controllers/application_controller.rb",
+		"/Users/01012191/Sites/react-rails-tutorial-master/app/controllers/api/v1/comments_controller.rb",
+		"/Users/01012191/git/corona/ocean/app/views/top/index.html.erb",
+		"/Users/01012191/git/corona/ocean/app/controllers/top_controller.rb",
+		"/Users/01012191/git/corona/ocean/app/views/layouts/application.html.erb",
+		"/Users/01012191/Sites/itemilu/app/lib/javascripts/actions/actions.jsx",
+		"/Users/01012191/Sites/itemilu/app/lib/javascripts/reducers/reducer.jsx",
+		"/Users/01012191/Sites/itemilu/app/lib/javascripts/components/Buttons.jsx",
+		"/Users/01012191/Sites/itemilu/app/lib/javascripts/components/events.jsx",
+		"/Users/01012191/Sites/itemilu/app/lib/javascripts/containers/App.jsx",
+		"/Users/01012191/Sites/itemilu/app/lib/javascripts/entry.jsx",
+		"/Users/01012191/Sites/itemilu/app/views/layouts/application.html.haml",
+		"/Users/01012191/Sites/itemilu/app/assets/javascripts/entry.js",
+		"/Users/01012191/Sites/itemilu/app/assets/stylesheets/scaffold.css",
+		"/Users/01012191/Sites/itemilu/public/stylesheets/bootstrap/js/bootstrap.js",
+		"/Users/01012191/Sites/itemilu/app/controllers/users_controller.rb",
+		"/Users/01012191/git/corona/ocean/frontend/api/wanted.js",
+		"/Users/01012191/git/corona/ocean/frontend/api/scout_users.js",
+		"/Users/01012191/git/corona/ocean/frontend/components/organisums/scout/Filter.js",
+		"/Users/01012191/git/corona/ocean/frontend/components/organisums/home/Info.js",
+		"/Users/01012191/git/corona/ocean/frontend/containers/scout/ScoutList.js",
+		"/Users/01012191/git/corona/ocean/frontend/containers/PatternLibrary.js",
+		"/Users/01012191/Sites/redux/examples/async/index.js",
+		"/Users/01012191/Sites/redux/examples/async/components/Picker.js",
+		"/Users/01012191/Sites/redux/examples/async/components/Posts.js",
+		"/Users/01012191/Sites/redux/examples/async/store/configureStore.js",
+		"/Users/01012191/Sites/redux/examples/async/containers/App.js",
+		"/Users/01012191/Sites/atemilu/app/lib/javascripts/reducers/reducer.jsx",
+		"/Users/01012191/git/code.score-rails/app/lib/assets/javascripts/controller/analysis.es6",
+		"/Users/01012191/git/code.score-rails/.eslintrc",
+		"/Users/01012191/Sites/atemilu/app/lib/javascripts/actions/actions.jsx",
+		"/Users/01012191/git/code.score-rails/app/lib/assets/javascripts/controller/configuration_user.es6",
+		"/Users/01012191/git/code.score-rails/app/lib/assets/javascripts/controller/examinee.es6",
+		"/Users/01012191/Sites/atemilu/app/lib/javascripts/components/Buttons.jsx",
+		"/Users/01012191/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/01012191/Sites/atemilu/app/lib/javascripts/entry.jsx",
+		"/Users/01012191/Sites/atemilu/app/lib/javascripts/components/Header.jsx",
+		"/Users/01012191/Sites/Orion/app/views/buppin/purchases/show.json.jbuilder",
+		"/Users/01012191/Sites/Orion/app/lib/assets/stylesheets/limited/links/_index.sass",
+		"/Users/01012191/Sites/Orion/app/lib/assets/stylesheets/limited/opportunity/_index.sass",
+		"/Users/01012191/Sites/Orion/app/lib/assets/stylesheets/application.sass",
+		"/Users/01012191/Sites/Orion/app/lib/assets/stylesheets/limited/opportunity/_show.sass",
+		"/Users/01012191/Sites/Orion/app/lib/assets/stylesheets/object/components/_button.sass",
+		"/Users/01012191/git/code.score-rails/config/routes.rb",
+		"/Users/01012191/Sites/Orion/app/controllers/buppin/purchases_controller.rb",
+		"/Users/01012191/Sites/Orion/app/controllers/links_controller.rb",
+		"/Users/01012191/Sites/Orion/app/controllers/employees_controller.rb",
+		"/Users/01012191/Sites/Orion/app/views/links/index.html.haml",
+		"/Users/01012191/Sites/Orion/app/views/opportunity/losses/index.html.haml",
+		"/Users/01012191/Sites/Orion/app/views/opportunity/losses/show.html.haml",
+		"/Users/01012191/Sites/Orion/app/views/layouts/_footer.html.haml",
+		"/Users/01012191/Sites/Orion/app/views/layouts/_breadcrumb.html.haml",
+		"/Users/01012191/Sites/Orion/config/routes.rb",
+		"/Users/01012191/Sites/Orion/spec/decorators/link_decorator_spec.rb",
+		"/Users/01012191/Sites/Orion/app/lib/assets/stylesheets/definition/_site_setting.sass",
+		"/Users/01012191/Sites/Orion/config/locales/ja.yml",
+		"/Users/01012191/git/corona/ocean/frontend/actions/modal.js",
+		"/Users/01012191/git/corona/ocean/frontend/styles/components/molecules/Modal.css",
+		"/Users/01012191/git/corona/ocean/frontend/containers/scout/ScoutWrapper.js",
+		"/Users/01012191/Sites/Orion/config/database.yml",
+		"/Users/01012191/Sites/atemilu/config/routes.rb",
+		"/Users/01012191/git/corona/ocean/frontend/containers/scout/ScoutUser.js",
+		"/Users/01012191/git/corona/ocean/frontend/components/molecules/Modal.js",
+		"/Users/01012191/git/corona/ocean/frontend/reducers/modal_param.js",
+		"/Users/01012191/git/corona/ocean/frontend/components/organisums/foundation/Header.js",
+		"/Users/01012191/git/corona/ocean/frontend/components/devtools/DevTools.js",
+		"/Users/01012191/git/corona/ocean/frontend/components/organisums/foundation/Footer.js",
+		"/Users/01012191/git/corona/ocean/app/assets/stylesheets/application.css",
+		"/Users/01012191/Sites/itemilu/app/lib/javascripts/components/Footer.jsx",
+		"/Users/01012191/Sites/itemilu/db/migrate/20160511061047_create_mains.rb",
+		"/Users/01012191/Sites/itemilu/db/seeds.rb",
+		"/Users/01012191/git/code.score-rails/app/lib/assets/javascripts/modules/ie.es6",
+		"/Users/01012191/git/code.score-rails/app/lib/assets/javascripts/app.es6",
+		"/Users/01012191/git/corona/ocean/config/database.yml",
+		"/Users/01012191/git/corona/ocean/app/controllers/application_controller.rb",
+		"/Users/01012191/Sites/atemilu/package.json",
+		"/Users/01012191/Sites/atemilu/gulp/config.js",
+		"/Users/01012191/Sites/atemilu/gulp/tasks/webpack.js",
+		"/Users/01012191/Sites/atemilu/gulp/tasks/watch.js",
+		"/Users/01012191/Sites/atemilu/app/lib/stylesheets/containers/home/top.css",
+		"/Users/01012191/Sites/atemilu/app/lib/javascripts/components/Main.jsx",
+		"/Users/01012191/git/corona/ocean-developertools/docker/docker-compose.yml",
+		"/Users/01012191/Sites/Orion/gulpfile.js",
+		"/Users/01012191/Sites/kabuite/gulpfile.js",
+		"/Users/01012191/git/code.score-rails/gulpfile.js",
+		"/Users/01012191/git/corona/ocean/webpack.config.js",
+		"/Users/01012191/Sites/atemilu/app/lib/javascripts/components/Footer.jsx",
+		"/Users/01012191/Sites/atemilu/gulpfile.js",
+		"/Users/01012191/Sites/atemilu/gulp/tasks/build.js",
+		"/Users/01012191/git/corona/ocean/frontend/styles/setting.js",
+		"/Users/01012191/Sites/atemilu/config/database.yml",
+		"/Users/01012191/Sites/atemilu/app/lib/stylesheets/reset.css"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/01012191/git/corona/ocean/",
+			"/Users/01012191/Sites/itemilu",
+			"/Users/01012191/Sites/Orion/app/",
+			"/Users/01012191/Sites/Orion/app/controllers",
+			"/Users/01012191/git/corona/ocean/frontend",
+			"/Users/01012191/Sites/atemilu/app/lib/javascripts"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"storedDatas",
+			"map",
+			"text",
+			"dispatch",
+			"storedDatas",
+			"obj",
+			"this.props",
+			"div",
+			"Box",
+			"returnEvents",
+			"onfetchEvents",
+			"store.getState",
+			"Event",
+			"Route",
+			"ScoutWrapper",
+			"bindActionCreators",
+			"text",
+			"FETCH_EVENTS",
+			"returnEvents",
+			"onGoodBtnClicked",
+			"EventBox",
+			"Event",
+			"nextFemale",
+			"全体の中から取捨選択して取得する。",
+			"returnFemale",
+			" =>",
+			"() =>",
+			"stores",
+			"Books",
+			"Main",
+			" className={styles.main}",
+			"Main",
+			"@scout_users",
+			"Nabber",
+			"createclass",
+			"createClass",
+			"posts",
+			"componentDidMount",
+			"handleRefreshClick",
+			"handleChange",
+			"jsx",
+			"add",
+			"breadcrumbs",
+			"bread",
+			"Title",
+			"sql",
+			"mysql",
+			"notify",
+			"buffer",
+			"stripDebug",
+			"reset",
+			"info_area",
+			"_stylesheetsContainersHomeTopCss2",
+			"image",
+			"s-home"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/lib/javascripts/entry.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 691,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19,
+								20
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSX/JSX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "app/lib/javascripts/containers/App.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1947,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1181,
+								1119
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/lib/javascripts/components/Main.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 733,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								620,
+								620
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/lib/javascripts/components/Buttons.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1407,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								502,
+								502
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/lib/javascripts/components/Footer.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 905,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/lib/javascripts/components/Header.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1075,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								704,
+								704
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "app/lib/javascripts/actions/actions.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 984,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								908,
+								908
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "app/lib/javascripts/reducers/reducer.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1218,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								380,
+								380
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
+			],
+			[
+				3,
+				0,
+				4,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.25,
+			0.5,
+			0.75,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "atemilu.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Sites/redux/examples/react_sample.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

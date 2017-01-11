@@ -1,0 +1,31 @@
+.info_area {
+  display: block;
+  width: 320px;
+  height: 380px;
+  text-align: center;
+}
+
+.number_good {
+  left: 0;
+}
+
+.number_bad {
+  right: 0;
+}
+
+.buttons {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
+
+.main {
+  height: 280px;
+}
+
+.image {
+  max-width: 320px;
+  max-height: 200px;
+  display: block;
+  margin: 0 auto;
+}

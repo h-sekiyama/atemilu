@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Atemilu
+    / %link{:href => "/stylesheets/application.css", :rel => "stylesheet", :type => "text/css"}/
+    = csrf_meta_tags
+  %body
+    = yield
+    %script{:src => "/javascripts/bundle.js"}
