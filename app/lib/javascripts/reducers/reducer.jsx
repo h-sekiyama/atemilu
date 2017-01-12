@@ -12,11 +12,12 @@ let initialState = [
   {
     id: 0,
     text: '女性0',
-    image: '/images/female0.jpg',
+    image: '/public/images/female0.jpg',
     good: 0,
     bad: 0
   }
 ]
+
 
 let text = (state = initialState, action) => {
   switch(action.type) {

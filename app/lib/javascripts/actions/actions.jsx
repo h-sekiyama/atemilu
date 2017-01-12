@@ -9,7 +9,7 @@ const returnFemale = () => {
   femaleData = {
     id: ++femaleId,
     text: '女性' + femaleId,
-    image: '/images/female' + femaleId + '.jpg'
+    image: '/public/images/female' + femaleId + '.jpg'
   }
   return femaleData;
 }
