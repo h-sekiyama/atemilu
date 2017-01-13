@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var WebpackNotifierPlugin = require('webpack-notifier');
 var path = require('path');
 
-var dest = './public/';
+var dest = './';
 var src = './app/lib/';
 var relativeSrcPath = path.relative('.', src);
 

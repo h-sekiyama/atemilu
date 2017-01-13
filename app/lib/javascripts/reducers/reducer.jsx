@@ -12,7 +12,7 @@ let initialState = [
   {
     id: 0,
     text: '女性0',
-    image: '/public/images/female0.jpg',
+    image: './images/female0.jpg',
     good: 0,
     bad: 0
   }
