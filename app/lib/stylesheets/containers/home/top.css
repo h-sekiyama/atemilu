@@ -1,8 +1,10 @@
 .info_area {
+  position: relative;
   display: block;
   width: 320px;
   height: 434px;
   text-align: center;
+  font-size: small;
 }
 
 .number_good {
@@ -21,6 +23,7 @@
 
 .main {
   height: 310px;
+  padding: 10px;
 }
 
 .image {
@@ -28,4 +31,15 @@
   max-height: 200px;
   display: block;
   margin: 0 auto;
+}
+
+.count {
+  display: inline-block;
+  margin: 5px;
+}
+
+.count_area {
+  position: absolute;
+  bottom: 90px;
+  left: 40px;
 }

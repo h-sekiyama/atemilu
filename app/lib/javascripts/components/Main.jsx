@@ -12,9 +12,9 @@ class Main extends Component {
           <div key={obj.id}>
             <img src={obj.image} className={styles.image} /><br />
             {obj.text}
-            <div>
-                <span>いいね！合計：{obj.good}</span>
-                <span>いまいち合計：{obj.bad}</span>
+            <div className={styles.count_area}>
+                <span className={styles.count}>いいね！合計：{obj.good}</span>
+                <span className={styles.count}>いまいち合計：{obj.bad}</span>
             </div>
           </div>
         )

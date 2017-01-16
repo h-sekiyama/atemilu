@@ -13454,9 +13454,9 @@
 /* 178 */
 /***/ function(module, exports) {
 
-	'use strict';
+	"use strict";
 	
-	Object.defineProperty(exports, '__esModule', {
+	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	exports.nextFemale = nextFemale;
@@ -13466,12 +13466,14 @@
 	  good: 0,
 	  bad: 0
 	};
+	var content = "";
+	var imgUrl = "";
 	
 	var returnFemale = function returnFemale() {
 	  femaleData = {
 	    id: ++femaleId,
 	    text: '女性' + femaleId,
-	    image: './images/female' + femaleId + '.jpg'
+	    image: $(content[0]).find('img')[femaleId]['src']
 	  };
 	  return femaleData;
 	};
@@ -13488,18 +13490,25 @@
 	  return sumData;
 	};
 	
-	/*
-	  Action Creator:
-	  Appコンポーネント (src/App.js) から呼ばれる Action Creator群
-	  App.jsから呼ばれ、Action Creator内部で生成されたオブジェクトはreducer (./reducers) に渡される。
-	*/
+	changeFemale();
 	
-	//addText (Action Creator) : Appコンポーネント (App.js) でAddボタンを呼び出した時に呼ばれる。
-	// type (何のアクションなのかを示す定数であり必須) とApp.jsから渡されたテキストを包含したオブジェクトを return する。
+	function changeFemale() {
+	  $.ajax({
+	    url: 'http://images.search.biglobe.ne.jp/cgi-bin/search?q=%E4%B8%8D%E7%B4%B0%E5%B7%A5%20%E7%8C%AB&start=40',
+	    type: 'GET',
+	    success: function success(data) {
+	      console.log(data);
+	      content = $(data.responseText).find('.clearfix');
+	      imgUrl = $(content[0]).find('img')[0]['src'];
+	      console.log(imgUrl);
+	    }
+	  });
+	}
 	
 	function nextFemale(favorite) {
 	  femaleData = returnFemale();
 	  sumData = returnSum(favorite);
+	  changeFemale();
 	  return {
 	    id: femaleData.id,
 	    text: femaleData.text,

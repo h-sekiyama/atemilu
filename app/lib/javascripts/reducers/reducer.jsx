@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { ADD_TEXT, CLEAR_TEXT } from '../actions/actions';
+import { changeFemale, nextFemale } from '../actions/actions';
 
 /*
   Reducer:
