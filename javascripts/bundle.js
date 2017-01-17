@@ -13493,14 +13493,14 @@
 	changeFemale();
 	
 	function changeFemale() {
+	  var rand = Math.floor(Math.random() * 731);
 	  $.ajax({
-	    url: 'http://images.search.biglobe.ne.jp/cgi-bin/search?q=%E4%B8%8D%E7%B4%B0%E5%B7%A5%20%E7%8C%AB&start=40',
+	    url: 'http://images.search.biglobe.ne.jp/cgi-bin/search?q=%E5%8F%B0%E6%B9%BE+%E5%A5%B3%E6%80%A7&start=' + rand,
 	    type: 'GET',
 	    success: function success(data) {
-	      console.log(data);
 	      content = $(data.responseText).find('.clearfix');
+	      console.log($(content[0]).find('img'));
 	      imgUrl = $(content[0]).find('img')[0]['src'];
-	      console.log(imgUrl);
 	    }
 	  });
 	}
@@ -23651,16 +23651,16 @@
 	            obj.text,
 	            _react2['default'].createElement(
 	              'div',
-	              null,
+	              { className: _stylesheetsContainersHomeTopCss2['default'].count_area },
 	              _react2['default'].createElement(
 	                'span',
-	                null,
+	                { className: _stylesheetsContainersHomeTopCss2['default'].count },
 	                'いいね！合計：',
 	                obj.good
 	              ),
 	              _react2['default'].createElement(
 	                'span',
-	                null,
+	                { className: _stylesheetsContainersHomeTopCss2['default'].count },
 	                'いまいち合計：',
 	                obj.bad
 	              )
@@ -24597,7 +24597,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".top__info_area___3gstP{display:block;width:320px;height:434px;text-align:center}.top__number_good___1iIvw{left:0}.top__number_bad___1L9Pg{right:0}.top__buttons___1c_B_{text-align:center;position:relative;bottom:0}.top__main___2ToXT{height:310px}.top__image___2nIvN{max-width:320px;max-height:200px;display:block;margin:0 auto}", ""]);
+	exports.push([module.id, ".top__info_area___3gstP{position:relative;display:block;width:320px;height:434px;text-align:center;font-size:small}.top__number_good___1iIvw{left:0}.top__number_bad___1L9Pg{right:0}.top__buttons___1c_B_{text-align:center;position:relative;bottom:0}.top__main___2ToXT{height:310px;padding:10px}.top__image___2nIvN{max-width:320px;max-height:200px;display:block;margin:0 auto}.top__count___2NYNR{display:inline-block;margin:5px}.top__count_area___t5u_7{position:absolute;bottom:90px;left:40px}", ""]);
 	
 	// exports
 	exports.locals = {
@@ -24606,7 +24606,9 @@
 		"number_bad": "top__number_bad___1L9Pg",
 		"buttons": "top__buttons___1c_B_",
 		"main": "top__main___2ToXT",
-		"image": "top__image___2nIvN"
+		"image": "top__image___2nIvN",
+		"count": "top__count___2NYNR",
+		"count_area": "top__count_area___t5u_7"
 	};
 
 /***/ },
