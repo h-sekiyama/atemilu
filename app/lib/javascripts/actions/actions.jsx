@@ -80,3 +80,7 @@ export function chatWithFemale() {
     type: 'CHAT'
   };
 }
+
+export function chatSend() {
+  console.log('action来た！');
+}

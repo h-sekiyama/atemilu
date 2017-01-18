@@ -11,7 +11,6 @@ import App from './containers/App'
 import Home from './containers/home/Home'
 import ChatWrapper from './containers/chat/ChatWrapper'
 import Chat from './containers/chat/Index'
-import ChatDetail from './containers/chat/Detail'
 /* Reducerから Store をインポート */
 const store = configureStore()
 const history = syncHistoryWithStore(hashHistory, store)
