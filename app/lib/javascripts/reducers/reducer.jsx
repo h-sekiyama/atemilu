@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux'
 import { changeFemale, nextFemale } from '../actions/actions';
+import { routerReducer } from 'react-router-redux'
 
 /*
   Reducer:
@@ -19,7 +20,7 @@ let initialState = [
 ]
 
 
-let text = (state = initialState, action) => {
+function returnFemaleData(state = initialState, action) {
   switch(action.type) {
     case 'CLICK':
       //ADD_TEXTアクションが来た時は現状の state に新しく生成されるオブジェクトをプラスして state を返す
@@ -44,9 +45,11 @@ let text = (state = initialState, action) => {
   }
 };
 
-// entry.js内部で Provider コンポーネントにセットするデータストア. <Provider>以下でthis.props.stateの形でアクセス可能。
-export const store = combineReducers(
+const rootReducer = combineReducers(
   {
-  storedDatas : text
+    storedDatas : returnFemaleData,
+    routing: routerReducer,
   }
 )
+
+export default rootReducer;

@@ -13467,13 +13467,15 @@
 	  bad: 0
 	};
 	var content = "";
+	var femaleName = "適当な女性";
 	var imgUrl = "";
 	
 	var returnFemale = function returnFemale() {
+	  var rand2 = Math.floor(Math.random() * 20);
 	  femaleData = {
 	    id: ++femaleId,
-	    text: '女性' + femaleId,
-	    image: $(content[0]).find('img')[femaleId]['src']
+	    text: femaleName,
+	    image: $(content[0]).find('img')[rand2]['src']
 	  };
 	  return femaleData;
 	};
@@ -13490,17 +13492,30 @@
 	  return sumData;
 	};
 	
-	changeFemale();
+	changeFemaleImage();
 	
-	function changeFemale() {
-	  var rand = Math.floor(Math.random() * 731);
+	function changeFemaleImage() {
+	  var rand1 = Math.floor(Math.random() * 731);
+	  // var rand2 = Math.floor( Math.random() * 20);
 	  $.ajax({
-	    url: 'http://images.search.biglobe.ne.jp/cgi-bin/search?q=%E5%8F%B0%E6%B9%BE+%E5%A5%B3%E6%80%A7&start=' + rand,
+	    url: 'http://images.search.biglobe.ne.jp/cgi-bin/search?q=%E5%8F%B0%E6%B9%BE+%E5%A5%B3%E6%80%A7&start=' + rand1,
 	    type: 'GET',
 	    success: function success(data) {
 	      content = $(data.responseText).find('.clearfix');
 	      console.log($(content[0]).find('img'));
-	      imgUrl = $(content[0]).find('img')[0]['src'];
+	      // imgUrl = $(content[0]).find('img')[rand2]['src'];
+	    }
+	  });
+	}
+	
+	function changeFemaleName() {
+	  // var rand2 = Math.floor( Math.random() * 20);
+	  $.ajax({
+	    url: 'https://everyday-growth.com/name/api/?cnt=1',
+	    type: 'GET',
+	    success: function success(data) {
+	      var jsonData = data.Response.Results;
+	      femaleName = jsonData.FirstName;
 	    }
 	  });
 	}
@@ -13508,7 +13523,8 @@
 	function nextFemale(favorite) {
 	  femaleData = returnFemale();
 	  sumData = returnSum(favorite);
-	  changeFemale();
+	  changeFemaleImage();
+	  changeFemaleName();
 	  return {
 	    id: femaleData.id,
 	    text: femaleData.text,

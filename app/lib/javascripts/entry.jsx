@@ -1,27 +1,27 @@
 /* ライブラリのインポート */
 import React from 'react'
 import { render } from 'react-dom'
-import { createStore } from 'redux'
+import { Router, Route, IndexRoute, hashHistory } from 'react-router'
+import { syncHistoryWithStore } from 'react-router-redux'
 import { Provider }  from 'react-redux'
+import configureStore from './store/configureStore'
 
 /* Appコンポーネントのインポート */
 import App from './containers/App'
+import Home from './containers/home/Home'
 /* Reducerから Store をインポート */
-import { store } from './reducers/reducer'
+const store = configureStore()
+const history = syncHistoryWithStore(hashHistory, store)
 
-/*
-  Entry Point:
-  Appコンポーネント (App.jsからインポート) をProviderコンポーネント (react-reduxからインポート) でラップする
-  さらに、createStore() メソッドで生成した Store をProviderコンポーネントに設定する
-*/
-
-//createStore() メソッドで Store を生成する。
-let applicationStore = createStore(store);
 let rootElement = document.querySelector('#root');
 
 render (
-  <Provider store={applicationStore}>
-    <App />
+  <Provider store={store}>
+    <Router history={history}>
+      <Route path="/" component={App}>
+        <IndexRoute component={Home} />
+      </Route>
+    </Router>
   </Provider>,
   // rootElement下にコンポーネントを生成
   rootElement

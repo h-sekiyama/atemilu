@@ -4,7 +4,7 @@ let sumData = {
   good: 0,
   bad: 0
 }
-var content ="";
+var content = "";
 var imgUrl = "";
 
 const returnFemale = () => {
@@ -29,26 +29,39 @@ const returnSum = (favorite) => {
   return sumData;
 }
 
-changeFemale();
+changeFemaleImage();
 
-function changeFemale() {
+function changeFemaleImage() {
   var rand1 = Math.floor( Math.random() * 731);
-  var rand2 = Math.floor( Math.random() * 20);
+  // var rand2 = Math.floor( Math.random() * 20);
   $.ajax({
     url: 'http://images.search.biglobe.ne.jp/cgi-bin/search?q=%E5%8F%B0%E6%B9%BE+%E5%A5%B3%E6%80%A7&start=' + rand1,
     type: 'GET',
     success: function(data) {
       content = $(data.responseText).find('.clearfix');
       console.log($(content[0]).find('img'));
-      imgUrl = $(content[0]).find('img')[rand2]['src'];
+      // imgUrl = $(content[0]).find('img')[rand2]['src'];
     }
   });
 }
 
+// function changeFemaleName() {
+//   // var rand2 = Math.floor( Math.random() * 20);
+//   $.ajax({
+//     url: 'https://everyday-growth.com/name/api/?cnt=1',
+//     type: 'GET',
+//     dataType: "json",
+//     success: function(data) {
+//       var jsonData = data.Response.Results;
+//       femaleName = jsonData.FirstName;
+//     }
+//   });
+// }
+
 export function nextFemale(favorite) {
   femaleData = returnFemale();
   sumData = returnSum(favorite);
-  changeFemale();
+  changeFemaleImage();
   return {
     id: femaleData.id,
     text: femaleData.text,
@@ -56,4 +69,9 @@ export function nextFemale(favorite) {
     sumData: sumData,
     type: 'CLICK'
   };
+}
+
+export function chatWithFemale() {
+  console.log('chat!');
+  
 }

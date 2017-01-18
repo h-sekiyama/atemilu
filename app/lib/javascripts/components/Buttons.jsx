@@ -12,6 +12,11 @@ class Buttons extends Component {
       <div className={styles.buttons}>
         <RaisedButton
           className="clear-completed"
+          onClick={(e) => this.onChatClicked(e)}
+          style={style}
+          label="この子とチャットする" /><br />
+        <RaisedButton
+          className="clear-completed"
           onClick={(e) => this.onGoodBtnClicked(e)}
           primary={true}
           style={style}
@@ -43,10 +48,16 @@ class Buttons extends Component {
     // dispatchメソッドで ActionCreator であるclearText() メソッドをラップして呼び出すことによって state の変更を伝播
     this.props.nextFemale('bad')
   }
+
+  onChatClicked(e) {
+    const { chatWithFemale } = this.props;
+    this.props.chatWithFemale();
+  }
 }
 
 Buttons.propTypes = {
-  nextFemale: PropTypes.func.isRequired
+  nextFemale: PropTypes.func.isRequired,
+  chatWithFemale: PropTypes.func.isRequired
 };
 
 export default Buttons;
