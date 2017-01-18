@@ -1,5 +1,6 @@
 import React, { PropTypes, Component } from 'react';
 import { RaisedButton } from 'material-ui';
+import { Link } from 'react-router'
 import styles from '../../stylesheets/containers/home/top.css'
 
 const style = {
@@ -10,11 +11,14 @@ class Buttons extends Component {
   render() {
     return (
       <div className={styles.buttons}>
-        <RaisedButton
-          className="clear-completed"
+        <Link
           onClick={(e) => this.onChatClicked(e)}
+          className="clear-completed"
+          to="chat"
           style={style}
-          label="この子とチャットする" /><br />
+          label="この子とチャットする">
+          この子とチャットする
+        </Link><br />
         <RaisedButton
           className="clear-completed"
           onClick={(e) => this.onGoodBtnClicked(e)}

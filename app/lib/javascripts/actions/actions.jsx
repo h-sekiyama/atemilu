@@ -72,6 +72,11 @@ export function nextFemale(favorite) {
 }
 
 export function chatWithFemale() {
-  console.log('chat!');
-  
+  return {
+    id: femaleData.id,
+    text: femaleData.text,
+    image: femaleData.image,
+    sumData: sumData,
+    type: 'CHAT'
+  };
 }

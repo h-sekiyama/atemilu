@@ -40,6 +40,18 @@ function returnFemaleData(state = initialState, action) {
         //   text: action.text
         // }
       ];
+    case 'CHAT':
+      return [
+        // Spread Operatorで現状の state を全て要素として配列の中に展開する: https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Spread_operator
+        {
+          id: action.id,
+          text: action.text,
+          image: action.image,
+          good: action.sumData.good,
+          bad: action.sumData.bad
+
+        }
+      ];
     default:
       return state
   }
