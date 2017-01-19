@@ -35,7 +35,8 @@ function changeFemaleImage() {
   var rand1 = Math.floor( Math.random() * 731);
   // var rand2 = Math.floor( Math.random() * 20);
   $.ajax({
-    url: 'http://images.search.biglobe.ne.jp/cgi-bin/search?q=%E5%8F%B0%E6%B9%BE+%E5%A5%B3%E6%80%A7&start=' + rand1,
+    // url: 'http://images.search.biglobe.ne.jp/cgi-bin/search?q=%E5%8F%B0%E6%B9%BE+%E5%A5%B3%E6%80%A7&start=' + rand1,
+    url: 'http://images.search.biglobe.ne.jp/cgi-bin/search?q=猫&start=' + rand1,
     type: 'GET',
     success: function(data) {
       content = $(data.responseText).find('.clearfix');
@@ -65,12 +66,5 @@ export function chatWithFemale() {
     image: femaleData.image,
     sumData: sumData,
     type: 'CHAT'
-  };
-}
-
-export function chatSend(message) {
-  console.log(message);
-  return {
-    type: 'TALK'
   };
 }

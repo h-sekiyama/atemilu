@@ -6,7 +6,7 @@ class TextArea extends Component {
   render() {
     return (
         <div className={styles.text}>
-          <TextField hintText="何か発言してみよう！" onKeyDown={(e) => this.onChatSend(e)} />
+          <TextField hintText="何か発言してみよう！" onKeyDown={(e) => this.onChatSend(e)} id="chat" />
         </div>
     );
   }
@@ -14,7 +14,7 @@ class TextArea extends Component {
   onChatSend(e) {
     if(e.keyCode == 13) {
       const { chatSend } = this.props;
-      this.props.chatSend('sekky');
+      this.props.chatSend($('#chat').val());
     }
   }
 }

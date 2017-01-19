@@ -41,3 +41,67 @@ a:hover {
 :global(.hoge) {
   font-size: 20px;
 }
+
+#chat_area {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 304px;
+}
+
+/* balloon left */
+.balloon-left {
+  position: relative;
+  display: inline-block;
+  padding: 0 15px;
+  width: 75%;
+  min-width: 115px;
+  height: 40px;
+  color: #222;
+  line-height: 40px;
+  text-align: left;
+  background: #fff;
+  z-index: 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  margin: 12px;
+}
+.balloon-left:after {
+  content: "";
+  position: absolute;
+  top: 50%; left: -10px;
+  margin-top: -10px;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+}
+/* balloon right */
+.balloon-right {
+  position: relative;
+  display: inline-block;
+  padding: 0 15px;
+  width: 95%;
+  min-width: 115px;
+  height: 40px;
+  color: #222;
+  line-height: 40px;
+  text-align: left;
+  background: #a5e060;
+  z-index: 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+.balloon-right:after {
+  content: "";
+  position: absolute;
+  top: 50%; right: -10px;
+  margin-top: -10px;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #a5e060;
+}

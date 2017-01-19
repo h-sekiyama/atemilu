@@ -13,11 +13,14 @@ class Chat extends Component {
         //state中のオブジェクトをループさせて<li>要素を描画。stateは selector() メソッドで指定しているものがpropsとして渡ってくる
         this.props.state.storedDatas.map((obj) =>
           <div key={obj.id} className={styles.female}>
-            <Avatar src={obj.image} className={styles.image} /><br />
-            {obj.text}
+            <div  style={{display: "none"}}>
+              <Avatar id="female" src={obj.image} className={styles.image}/><br />
+              {obj.text}
+            </div>
           </div>
         )
         }
+        <div id="chat_area"></div>
       </div>
     )
   }

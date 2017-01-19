@@ -6,7 +6,7 @@ import Index from './Index';
 import TextArea from '../../components/TextArea'
 
 /* Action Creatorのインポート */
-import * as chatSend from '../../actions/actions'
+import * as chatSend from '../../actions/chat'
 
 class ChatWrapper extends Component {
 

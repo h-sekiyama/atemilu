@@ -6,8 +6,8 @@ import Buttons from '../../components/Buttons';
 import styles from '../../../stylesheets/containers/home/top.css'
 
 /* Action Creatorのインポート */
-import * as nextFemale from '../../actions/actions'
-import * as chatWithFemale from '../../actions/actions'
+import * as nextFemale from '../../actions/favorite'
+import * as chatWithFemale from '../../actions/favorite'
 
 class Home extends Component {
 

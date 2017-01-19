@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { changeFemale, nextFemale } from '../actions/actions';
+import { changeFemale, nextFemale } from '../actions/favorite';
 import { routerReducer } from 'react-router-redux'
 
 /*
