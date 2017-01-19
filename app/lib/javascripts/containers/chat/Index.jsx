@@ -7,7 +7,6 @@ import styles from '../../../stylesheets/containers/chat/top.css'
 class Chat extends Component {
 
   render() {
-    const { children } = this.props;
     return (
       <div className={styles.index}>
         {
@@ -19,22 +18,12 @@ class Chat extends Component {
           </div>
         )
         }
-        <div className={styles.text}>
-          <TextField hintText="何か発言してみよう！" onKeyDown={(e) => this.onChatSend(e)} />
-        </div>
       </div>
     )
-  }
-
-  onChatSend(e) {
-    if(e.keyCode == 13) {
-      console.log('エンター押した！');
-    }
   }
 }
 
 Chat.propTypes = {
-  chatSend: PropTypes.func.isRequired,
 }
 
 export default Chat

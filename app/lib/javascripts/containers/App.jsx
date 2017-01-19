@@ -48,7 +48,7 @@ class App extends Component {
     const { children, location } = this.props;
     const sceneName = this.getGlobalClass(location.pathname)
     return (
-      <MuiThemeProvider muiTheme={getMuiTheme()} className="s-home">
+      <MuiThemeProvider muiTheme={getMuiTheme()}>
         <div className={styles.info_area}>
           <Header />
           {children}

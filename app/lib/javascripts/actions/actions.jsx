@@ -45,19 +45,6 @@ function changeFemaleImage() {
   });
 }
 
-// function changeFemaleName() {
-//   // var rand2 = Math.floor( Math.random() * 20);
-//   $.ajax({
-//     url: 'https://everyday-growth.com/name/api/?cnt=1',
-//     type: 'GET',
-//     dataType: "json",
-//     success: function(data) {
-//       var jsonData = data.Response.Results;
-//       femaleName = jsonData.FirstName;
-//     }
-//   });
-// }
-
 export function nextFemale(favorite) {
   femaleData = returnFemale();
   sumData = returnSum(favorite);
@@ -81,6 +68,9 @@ export function chatWithFemale() {
   };
 }
 
-export function chatSend() {
-  console.log('action来た！');
+export function chatSend(message) {
+  console.log(message);
+  return {
+    type: 'TALK'
+  };
 }
