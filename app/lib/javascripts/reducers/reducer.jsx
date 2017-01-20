@@ -1,5 +1,4 @@
 import { combineReducers } from 'redux'
-import { changeFemale, nextFemale } from '../actions/favorite';
 import { routerReducer } from 'react-router-redux'
 
 /*
@@ -8,6 +7,8 @@ import { routerReducer } from 'react-router-redux'
   stateは Reducer が返した新しい state に更新され、View (Appコンポーネント) が新しい state を元に再描画される。
 */
 
+var appUserId = null;
+
 // アプリ起動時のstate
 let initialState = [
   {
@@ -15,10 +16,27 @@ let initialState = [
     text: '女性0',
     image: './images/female0.jpg',
     good: 0,
-    bad: 0
+    bad: 0,
+    appUserId: null
   }
 ]
 
+//Repl-AIのユーザーID取得処理
+$.ajax({
+  type: 'POST',
+  dataType: 'json',
+  url: 'https://api.repl-ai.jp/v1/registration',
+  headers: {
+    'Content-Type': 'application/json',
+    'x-api-key': 'qvPuV0ukTq8XdPbLyPh7X5TA4k99KB3W1dOfO11b'
+  },
+  data: JSON.stringify({
+    botId: 'nekoneko'
+  }),
+  success: function(data) {
+    appUserId = data.appUserId;
+  }
+});
 
 function returnFemaleData(state = initialState, action) {
   switch(action.type) {
@@ -32,7 +50,6 @@ function returnFemaleData(state = initialState, action) {
           image: action.image,
           good: action.sumData.good,
           bad: action.sumData.bad
-
         }
         //下記はADD_TEXTアクションによって新たに state に追加されるオブジェクト
         // {
@@ -47,11 +64,8 @@ function returnFemaleData(state = initialState, action) {
           id: action.id,
           text: action.text,
           image: action.image,
-          good: action.sumData.good,
-          bad: action.sumData.bad
-
-        }
-      ];
+          appUserId: appUserId
+        }];
     default:
       return state
   }

@@ -14,7 +14,7 @@ class ChatWrapper extends Component {
     return (
       <div>
         <Index state={this.props.state} />
-        <TextArea chatSend={this.props.actions.chatSend} />
+        <TextArea chatSend={this.props.actions.chatSend} state={this.props.state} />
       </div>
     )
   }
