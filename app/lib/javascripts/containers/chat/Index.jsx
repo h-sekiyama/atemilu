@@ -14,7 +14,7 @@ class Chat extends Component {
         this.props.state.storedDatas.map((obj) =>
           <div key={obj.id} className={styles.female}>
             <div  style={{display: "none"}}>
-              <Avatar id="female" src={obj.image} className={styles.image}/><br />
+              <div id="female" className={styles.image_area}><Avatar src={obj.image} className={styles.image}/></div>
               {obj.text}
             </div>
           </div>

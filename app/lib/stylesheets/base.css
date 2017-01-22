@@ -45,7 +45,12 @@ a:hover {
 #chat_area {
   overflow-y: auto;
   overflow-x: hidden;
-  height: 304px;
+  height: 374px;
+}
+
+#female {
+  vertical-align: super;
+  display: inline-block;
 }
 
 /* balloon left */
@@ -55,7 +60,7 @@ a:hover {
   padding: 0 15px;
   width: 75%;
   min-width: 115px;
-  height: 40px;
+  height: auto;
   color: #222;
   line-height: 40px;
   text-align: left;
@@ -63,7 +68,7 @@ a:hover {
   z-index: 0;
   border-radius: 10px;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
-  margin: 12px;
+  margin: 6px 12px;
 }
 .balloon-left:after {
   content: "";
@@ -84,7 +89,7 @@ a:hover {
   padding: 0 15px;
   width: 93%;
   min-width: 115px;
-  height: 40px;
+  height: auto;
   color: #222;
   line-height: 40px;
   text-align: left;
@@ -92,6 +97,7 @@ a:hover {
   z-index: 0;
   border-radius: 10px;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  margin: 6px;
 }
 .balloon-right:after {
   content: "";

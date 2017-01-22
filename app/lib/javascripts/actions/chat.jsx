@@ -1,9 +1,12 @@
 function addChatOwn(message, userId) {
-  $('#chat_area').append(
-      '<div class="balloon-right">' + message + '</div>'
-    );
-  $('#chat').val('');
-  sendChatApi(message, userId);
+  if(message != '') {
+    $('#chat_area').append(
+        '<div class="balloon-right">' + message + '</div>'
+      );
+    $('#chat').val('');
+    $('#chat_area').scrollTop(1000000);
+    sendChatApi(message, userId);
+  }
 }
 
 function sendChatApi(message, userId) {
@@ -28,8 +31,13 @@ function sendChatApi(message, userId) {
   });
 }
 
-function addChatFemale() {
-  $('#chat_area').append($('#female').prop('outerHTML') + '<div class="balloon-left">死ね</div>')
+function addChatFemale(data) {
+  if(data.systemText.expression != 'NOMATCH') {
+    $('#chat_area').append($('#female').prop('outerHTML') + '<div class="balloon-left">' + data.systemText.expression + '</div>')
+  } else {
+    $('#chat_area').append($('#female').prop('outerHTML') + '<div class="balloon-left">飽きた。</div>')
+  }
+  $('#chat_area').scrollTop(100000);
 }
 
 export function chatSend(message, userId) {
