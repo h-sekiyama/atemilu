@@ -1,3 +1,6 @@
+var initTalkingFlag = true;
+var initTopicId = '02'
+
 function addChatOwn(message, userId) {
   if(message != '') {
     $('#chat_area').append(
@@ -21,12 +24,14 @@ function sendChatApi(message, userId) {
     data: JSON.stringify({
       appUserId: userId,
       botId: 'nekoneko',
-      initTalkingFlag: true,
-      initTopicId: '02',
+      initTalkingFlag: initTalkingFlag,
+      initTopicId: initTopicId,
       voiceText: message
     }),
     success: function(data) {
       addChatFemale(data);
+      initTalkingFlag = false;
+      initTopicId = undefined;
     }
   });
 }
