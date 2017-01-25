@@ -27623,9 +27623,24 @@
 	
 	/*
 	  Reducer:
-	  ReducerはAction Creatorから渡されたデータに変更をもとに新しい state を返す。
+	  Reducerはstate[0] Creatorから渡されたデータに変更をもとに新しい state を返す。
 	  stateは Reducer が返した新しい state に更新され、View (Appコンポーネント) が新しい state を元に再描画される。
 	*/
+	
+	var initialImage = '';
+	var content = '';
+	var rand1 = Math.floor(Math.random() * 731);
+	// var rand2 = Math.floor( Math.random() * 20);
+	$.ajax({
+	  // url: 'http://images.search.biglobe.ne.jp/cgi-bin/search?q=%E5%8F%B0%E6%B9%BE+%E5%A5%B3%E6%80%A7&start=' + rand1,
+	  url: 'http://images.search.biglobe.ne.jp/cgi-bin/search?q=台湾+女性&start=' + rand1,
+	  type: 'GET',
+	  success: function success(data) {
+	    content = $(data.responseText).find('.clearfix');
+	    initialImage = $(content[0]).find('img');
+	    // imgUrl = $(content[0]).find('img')[rand2]['src'];
+	  }
+	});
 	
 	var appUserId = null;
 	
@@ -27633,7 +27648,7 @@
 	var initialState = [{
 	  id: 0,
 	  text: '女性0',
-	  image: './images/female0.jpg',
+	  image: initialImage,
 	  good: 0,
 	  bad: 0,
 	  appUserId: null
@@ -27661,7 +27676,6 @@
 	
 	  switch (action.type) {
 	    case 'CLICK':
-	      //ADD_TEXTアクションが来た時は現状の state に新しく生成されるオブジェクトをプラスして state を返す
 	      return [
 	      // Spread Operatorで現状の state を全て要素として配列の中に展開する: https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Spread_operator
 	      {
@@ -27670,20 +27684,12 @@
 	        image: action.image,
 	        good: action.sumData.good,
 	        bad: action.sumData.bad
-	      }
-	      //下記はADD_TEXTアクションによって新たに state に追加されるオブジェクト
-	      // {
-	      //   id: action.id,
-	      //   text: action.text
-	      // }
-	      ];
+	      }];
 	    case 'CHAT':
-	      return [
-	      // Spread Operatorで現状の state を全て要素として配列の中に展開する: https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Spread_operator
-	      {
-	        id: action.id,
-	        text: action.text,
-	        image: action.image,
+	      return [{
+	        id: state[0].id,
+	        text: state[0].text,
+	        image: state[0].image,
 	        appUserId: appUserId
 	      }];
 	    default:

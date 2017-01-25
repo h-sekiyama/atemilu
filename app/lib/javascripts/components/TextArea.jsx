@@ -12,7 +12,7 @@ class TextArea extends Component {
   }
 
   onChatSend(e) {
-    if(e.keyCode == 13) {
+    if(e.keyCode == 13 && $('#chat').val() != '') {
       const { chatSend } = this.props;
       this.props.chatSend($('#chat').val(), this.props.state.storedDatas[0].appUserId);
     }
